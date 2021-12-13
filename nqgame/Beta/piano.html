@@ -14,12 +14,20 @@
                 position: relative;
                 top: -8px;
             }
+            #test{
+                position: absolute;
+                top: 0px;
+            }
+            #test img{
+                position: relative;
+                left: 100px;
+            }
             
-            html, body {margin: 0; height: 100%; overflow: hidden;}
         </style>
     </head>
     <body>
-        <div align="center">
+        <div id="test"></div>
+        <div align="center" class="game">
             <img src="vertical_border.png" id="border1" class="draw">
             <img src="./key.png" id="key1" class="key">
             <img src="./key.png" id="key2" class="key">
@@ -30,8 +38,6 @@
             <img src="./key.png" id="key7" class="key">
             <img src="vertical_border.png" class="draw">
         </div>
-        
-        
     </body>
 
     <script>
@@ -123,6 +129,13 @@
     </script>
 
     <script>
+        var src = document.getElementById("test");
 
+        const img = document.createElement("img");
+        img.src = "./note.png";
+        test.appendChild(img);
+        img.id="note1";
+        img.classList.add("note");
+        
     </script>
 </html>
