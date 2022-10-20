@@ -116,22 +116,23 @@
     // Get the id of the <path> element and the length of <path>
     var line = document.getElementsByClassName("line");
 
-    var length = line[0].getTotalLength();
     // The start position of the drawing
     for (let i = 0; i < line.length; i++) {
       const e = line[i];
+      var length = e.getTotalLength();
       e.style.strokeDasharray = length;
       e.style.strokeDashoffset = length;
     }
     // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
     window.addEventListener("scroll", myFunction);
-    
+
     function myFunction() {
       var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
       // Reverse the drawing (when scrolling upwards)
-      var draw = length * scrollpercent;
       for (let i = 0; i < line.length; i++) {
         const e = line[i];
+        var length = e.getTotalLength();
+        var draw = length * scrollpercent;
         e.style.strokeDashoffset = length - draw;
       }
     }
@@ -142,8 +143,8 @@
     const divEl = document.getElementById("contain-heart");
     function creatHeart() {
       setTimeout(function () {
-        const x = Math.random()*100;
-        const y = Math.random()*100;
+        const x = Math.random() * 100;
+        const y = Math.random() * 100;
         const spanEl = document.createElement("span");
         spanEl.style.left = x + "%";
         spanEl.style.top = y + "%";
