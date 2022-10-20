@@ -129,10 +129,10 @@
     
     function myFunction() {
       var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-      var draw = length * scrollpercent;
       // Reverse the drawing (when scrolling upwards)
       for (let i = 0; i < line.length; i++) {
         const e = line[i];
+        var draw = e.style.strokeDasharray * scrollpercent;
         e.style.strokeDashoffset = e.style.strokeDasharray - draw;
       }
     }
