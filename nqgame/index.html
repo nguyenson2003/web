@@ -35,7 +35,8 @@
             for (j = 0; j < n; j++) {
                 const inp = document.createElement("input");
                 inp.type = "checkbox";
-                inp.onmouseup = function () {
+                inp.onmouseup =  function(){
+                    console.log(this);
                     myFunction(this);
                 };
                 inp.setAttribute("x",i);
@@ -54,7 +55,7 @@
             });
         });
         function myFunction(e) {
-            e.click();
+            // e.click();
             let x = parseInt(e.getAttribute("x"));
             let y = parseInt(e.getAttribute("y"));
             

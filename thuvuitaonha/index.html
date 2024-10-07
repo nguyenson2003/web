@@ -2,167 +2,161 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      height: 4000px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            height: 4000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    #mySVG {
-      height: 200px;
-      width: 650px;
-    }
+        #mySVG {
+            height: 200px;
+            width: 650px;
+        }
 
-    #contain {
-      position: fixed;
-      display: flex;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      align-items: center;
-      justify-content: center;
-    }
+        #contain {
+            position: fixed;
+            display: flex;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .footer {
-      bottom: 0;
-    }
+        .footer {
+            bottom: 0;
+        }
 
-    #contain-heart {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+        
 
-    span {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      /* background: url(https://cdn0.iconfinder.com/data/icons/love-hand-drawn-color/64/heart-128.png); */
-      background: url(https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png);
-      /* animation: animate linear 7s; */
-      pointer-events: none;
-      background-size: cover;
-      transform: translate(-50%, -50%);
-    }
-
-    @keyframes animate {
-      from {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-        filter: hue-rotate(0);
-      }
-
-      to {
-        opacity: 0;
-        transform: translate(-50%, -1000%);
-        filter: hue-rotate(3000deg);
-      }
-    }
-  </style>
+        
+    </style>
 </head>
 
 <body>
-  <div style="text-align: center;">
-    <h1>
-      Cuộn xuống cuối trang
-    </h1>
-    <p>Ở trên điện thoại khuyến khích để màn hình ngang để hiển thị đầy đủ</p>
-  </div>
-  <div id="contain">
-    <svg id="mySVG">
-      <!-- 2 -->
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M0 0 l100 0" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M100 0 l0 100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M100 100 l-100 0" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M0 100 l0 100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M0 200 l100 0" />
-      <!-- 0 -->
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 0 l100 0" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 0 l0 100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 100 l0 100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 200 l-100 0" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 200 l0 -100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 100 l0 -100" />
-      <!-- / -->
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M400 0 l-50 100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M350 100 l-50 100" />
-      <!-- 1 -->
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 0 l0 100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 100 l0 100" />
-      <!-- 0 -->
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 0 l100 0" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M650 0 l0 100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M650 100 l0 100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M650 200 l-100 0" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 200 l0 -100" />
-      <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 100 l0 -100" />
-    </svg>
-  </div>
-  <div id="contain-heart"></div>
-  <div class="footer">
-    <h1>
-      Chúc mừng ngày phụ nữ Việt Nam
-    </h1>
-  </div>
+    <div style="text-align: center;">
+        <h1>
+            Cuộn xuống cuối trang
+        </h1>
+        <p>Ở trên điện thoại khuyến khích để màn hình ngang để hiển thị đầy đủ</p>
+    </div>
+    <div id="contain">
+        <svg id="mySVG">
+            <!-- 2 -->
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M0 0 l100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M100 0 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M100 100 l-100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M0 100 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M0 200 l100 0" />
+            <!-- 0 -->
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 0 l100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 0 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 100 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 200 l-100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 200 l0 -100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 100 l0 -100" />
+            <!-- / -->
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M400 0 l-50 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M350 100 l-50 100" />
+            <!-- 1 -->
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 0 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 100 l0 100" />
+            <!-- 0 -->
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 0 l100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M650 0 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M650 100 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M650 200 l-100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 200 l0 -100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 100 l0 -100" />
+        </svg>
+    </div>
+    <!-- <div id="contain-heart"></div> -->
+    
+    <script>
+        // Get the id of the <path> element and the length of <path>
+            var line = document.getElementsByClassName("line");
+            
+            // The start position of the drawing
+        for (let i = 0; i < line.length; i++) {
+            const e = line[i];
+            var length = e.getTotalLength();
+            e.style.strokeDasharray = length;
+            e.style.strokeDashoffset = length;
+        }
+        // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+        window.addEventListener("scroll", myFunction);
 
-  <script>
-    // Get the id of the <path> element and the length of <path>
-    var line = document.getElementsByClassName("line");
+        function myFunction() {
+            var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+            // Reverse the drawing (when scrolling upwards)
+            for (let i = 0; i < line.length; i++) {
+                const e = line[i];
+                var length = e.getTotalLength();
+                var draw = length * scrollpercent;
+                e.style.strokeDashoffset = length - draw;
+            }
+        }
+    </script>
 
-    // The start position of the drawing
-    for (let i = 0; i < line.length; i++) {
-      const e = line[i];
-      var length = e.getTotalLength();
-      e.style.strokeDasharray = length;
-      e.style.strokeDashoffset = length;
-    }
-    // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-    window.addEventListener("scroll", myFunction);
+    <!-- heart -->
+    <script>
+        // const divEl = document.getElementById("contain-heart");
+        const divEl = document.createElement("div");
+        divEl.setAttribute("id","contain-heart");
+        divEl.setAttribute("style","position:fixed;top:0;bottom:0;left:0;right:0;z-index:100;");
+        document.body.appendChild(divEl);
 
-    function myFunction() {
-      var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-      // Reverse the drawing (when scrolling upwards)
-      for (let i = 0; i < line.length; i++) {
-        const e = line[i];
-        var length = e.getTotalLength();
-        var draw = length * scrollpercent;
-        e.style.strokeDashoffset = length - draw;
-      }
-    }
-  </script>
-
-  <!-- heart -->
-  <script>
-    const divEl = document.getElementById("contain-heart");
-    function creatHeart() {
-      setTimeout(function () {
-        const x = Math.random() * 100;
-        const y = Math.random() * 100;
-        const spanEl = document.createElement("span");
-        spanEl.style.left = x + "%";
-        spanEl.style.top = y + "%";
-        const size = Math.random() * 250;
-        spanEl.style.height = size + "px";
-        spanEl.style.width = size + "px";
-        spanEl.style.animationName = `animate`;
-        spanEl.style.animationDuration = `7s`;
-        spanEl.style.animationTimingFunction = `linear`;
-        // cai animate trong js
-        divEl.appendChild(spanEl);
-        setTimeout(function () {
-          spanEl.remove();
-        }, 5000);
+        let dynamicStyles = null;
+        function addAnimation(body) {
+            if (!dynamicStyles) {
+                dynamicStyles = document.createElement('style');
+                dynamicStyles.type = 'text/css';
+                document.head.appendChild(dynamicStyles);
+            }
+            dynamicStyles.sheet.insertRule(body, dynamicStyles.length);
+        }
+        addAnimation(`
+        @keyframes animate {
+            from {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+                filter: hue-rotate(0);
+            }
+                to {
+                    opacity: 0;
+                    transform: translate(-50%, -1000%);
+                    filter: hue-rotate(3000deg);
+                }
+            }
+        `);
+        function creatHeart() {
+            setTimeout(function () {
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                const spanEl = document.createElement("span");
+                spanEl.setAttribute("style","position: absolute;background: url(https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png);background-size: cover;transform: translate(-50%, -50%);");
+                spanEl.style.left = x + "%";
+                spanEl.style.top = y + "%";
+                const size = Math.random() * 250;
+                spanEl.style.height = size + "px";
+                spanEl.style.width = size + "px";
+                spanEl.style.animationName = `animate`;
+                spanEl.style.animationDuration = `7s`;
+                spanEl.style.animationTimingFunction = `linear`;
+                // cai animate trong js
+                divEl.appendChild(spanEl);
+                setTimeout(function () {
+                    spanEl.remove();
+                }, 5000);
+                creatHeart();
+            }, 800);
+        }
         creatHeart();
-      }, 800);
-    }
-    creatHeart();
     // const bodyEl = document.querySelector("body");
     // bodyEl.addEventListener("touchmove", (event) => {
     //   const x = event.touches[0].clientX;
@@ -181,7 +175,12 @@
     //     spanEl.remove();
     //   }, 3000);
     // });
-  </script>
+    </script>
+    <div class="footer">
+        <h1>
+            Chúc mừng ngày phụ nữ Việt Nam
+        </h1>
+    </div>
 </body>
 
 </html>
