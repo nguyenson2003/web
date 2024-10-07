@@ -29,7 +29,7 @@
         endl();
         //tag button html
         const game = [];
-        const n = 6;
+        const n = 4;
         for (i = 0; i < n; i++) {
             game.push([]);
             for (j = 0; j < n; j++) {
@@ -61,6 +61,7 @@
         function myFunction(e) {
             let x = parseInt(e.getAttribute("x"));
             let y = parseInt(e.getAttribute("y"));
+            change(game[x][y]);
             if(x>0) change(game[x-1][y]);
             if(y>0) change(game[x][y-1]);
             if(x<n-1) change(game[1+x][y]);
@@ -68,7 +69,7 @@
             let count = 0;
             game.forEach(arr => {
                 arr.forEach(e1 => {
-                    if(e1.style.backgroundColor == 'cyan') count++;
+                    if(e1.style.backgroundColor === 'cyan') count++;
                 });
             });
             // if(e.checked) count--;
