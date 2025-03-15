@@ -13,7 +13,7 @@
         }
 
         #mySVG {
-            height: 450px;
+            height: 200px;
             width: 650px;
         }
 
@@ -48,44 +48,25 @@
     <div id="contain">
         <svg id="mySVG">
             <!-- 1 -->
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M100 0 l0 100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M100 100 l0 100" />
-            <!-- 5 -->
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M250 0 l-100 0" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M250 100 l-100 0" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M250 200 l0 -100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M150 200 l100 0" />
-            <!-- <path fill="none" stroke="red" stroke-width="3" class="line2" d="M150 100 l0 100" /> -->
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M150 00 l0 100" />
-            <!-- / -->
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M400 0 l-50 100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M350 100 l-50 100" />
-            <!-- 3 -->
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M450 0 l100 00" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M450 100 l100 00" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M450 200 l100 00" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M550 0 l0 100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line2" d="M550 100 l0 100" />
-            
-            <!-- 1 -->
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M100 250 l0 100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M100 350 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M100 0 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M100 100 l0 100" />
             <!-- 6 -->
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 250 l-100 0" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 350 l-100 0" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 450 l0 -100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 450 l100 0" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 350 l0 100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 250 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 0 l-100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 100 l-100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M250 200 l0 -100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 200 l100 0" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 100 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M150 00 l0 100" />
             <!-- / -->
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M400 250 l-50 100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M350 350 l-50 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M400 0 l-50 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M350 100 l-50 100" />
             <!-- 3 -->
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 250 l100 00" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 350 l100 00" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 450 l100 00" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 250 l0 100" />
-            <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 350 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 0 l100 00" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 100 l100 00" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M450 200 l100 00" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 0 l0 100" />
+            <path fill="none" stroke="red" stroke-width="3" class="line" d="M550 100 l0 100" />
+            
         </svg>
     </div>
     <!-- <div id="contain-heart"></div> -->
@@ -112,30 +93,6 @@
                 var length = e.getTotalLength();
                 var draw = length * scrollpercent;
                 e.style.strokeDashoffset = length - draw;
-            }
-        }
-
-        // Get the id of the <path> element and the length of <path>
-            var line2 = document.getElementsByClassName("line2");
-            
-            // The start position of the drawing
-        for (let i = 0; i < line2.length; i++) {
-            const e = line2[i];
-            var length = e.getTotalLength();
-            e.style.strokeDasharray = length;
-            e.style.strokeDashoffset = length;
-        }
-        // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-        window.addEventListener("scroll", myFunction2);
-
-        function myFunction2() {
-            var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-            // Reverse the drawing (when scrolling upwards)
-            for (let i = 0; i < line2.length; i++) {
-                const e = line2[i];
-                var length = e.getTotalLength();
-                var draw = length * scrollpercent;
-                e.style.strokeDashoffset = draw;
             }
         }
     </script>
